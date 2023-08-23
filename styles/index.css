@@ -40,7 +40,7 @@ main #main_slide .swiper-wrapper .slide2 {
 main #main_slide .swiper-wrapper .slide2 h2 img {width:50%; margin-top:15px;}
 /* 3 */
 main #main_slide .swiper-wrapper .slide3 {
-    background:url(../image/bnr_bg3.jpg) no-repeat center;
+    background:url(../image/main_bnr1.jpg) no-repeat center;
     background-size:cover;
 }
 /* 4 */

@@ -9,7 +9,6 @@
     <!-- swiper -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
     <link rel="icon" href="./image/favicon.png" type="image/x-icon">
@@ -25,38 +24,57 @@
 </head>
 <body>
     <header>
-        <div class="adv"><a href="#">신규 가입 시 바로 사용 가능한 적립금 2,000원 지급!</a></div>
-        <div class="gnb">
-            <a href="#">로그인</a>
-            <a href="#">주문조회</a>
-            <a href="#">회원가입</a>
-            <a href="#">고객센터</a>
-        </div>
-        <div class="fix_top">
-            <h1><a href="#"><img src="./image/logo.png" alt="롬앤"></a></h1>
-            <div class="nav_lnb">
-                <nav>
-                    <a href="#" id="nav_menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                    <a href="#">SHOP</a>
-                    <a href="#">BRAND</a>
-                    <a href="#">EVENT</a>
-                    <a href="#">COMMUNITY</a>
-                </nav>
-                <div class="lnb">
-                    <form action="#" id="searchFrm" method="get">
-                        <fieldset>
-                            <legend class="skip">검색양식</legend>
-                            <input type="text" id="search" placeholder="롬앤 X 산리오캐릭터즈 ">
-                            <button type="submit" id="searchBtn"><img src="./image/search.png" alt="검색"></button>
-                        </fieldset>
-                    </form>
-                    <a href="#"><img src="./image/User.png" alt="마이페이지"></a>
-                    <a href="#"><img src="./image/cart.png" alt="장바구니"></a>
-                </div>
+        <div class="head_bg">
+            <h1><img src="./image/logo.png" alt="롬앤"></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">BRAND</a>
+                        <ul class="sub">
+                            <li><a href="#">롬앤 소개</a></li>
+                            <li><a href="#">롬앤 소식</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SHOP</a>
+                        <ul class="sub">
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">BASE</a></li>
+                            <li><a href="#">EYE</a></li>
+                            <li><a href="#">LIP</a></li>
+                            <li><a href="#">NAIL</a></li>
+                            <li><a href="#">TOOL</a></li>
+                            <li><a href="#">SET</a></li>
+                            <li><a href="#">EDITION</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">LOOK</a>
+                        <ul class="sub">
+                            <li><a href="#">룩튜토리얼</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">EVENT</a>
+                        <ul class="sub">
+                            <li><a href="#">진행중</a></li>
+                            <li><a href="#">종료</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">COMMUNITY</a>
+                        <ul class="sub">
+                            <li><a href="#">NOTICE</a></li>
+                            <li><a href="#">REVIEW</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">PROJECT</a>
+                        <ul class="sub">
+                            <li><a href="#">케미프로젝트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="gnb">
+                <a href="#"><img src="./image/search.png" alt="검색"></a>
+                <a href="#"><img src="./image/User.png" alt="로그인"></a>
+                <a href="#"><img src="./image/cart.png" alt="장바구니"></a>
             </div>
         </div>
     </header>
@@ -83,7 +101,17 @@
                         </a>
                     </div>
                 </div>
-                <div class="swiper-slide slide3"></div>
+                <div class="swiper-slide slide3">
+                    <div class="txt">
+                        <strong>BACK ME</strong>
+                        <strong>TONE - UP CREAM</strong>
+                        <span>수분크림의 촉촉함</span>
+                        <span>수분크림의 촉촉한 보습인자로 ‘티’나지 않게 맑아지는 피부</span>
+                        <a href="#">
+                            <span>자세히 보기</span><img src="./image/chevron_right.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
                 <div class="swiper-slide slide4"></div>
                 <div class="swiper-slide slide5"></div>
                 <div class="swiper-slide slide6"></div>
@@ -282,7 +310,7 @@
             </div>
         </div>
         <section id="visual">
-            <video src="./image/video.mp4" autoplay muted loop></video>
+            <video src="./image/VIDEO _1080p.mp4" autoplay muted loop></video>
             <div class="txt">
                 <h1>[NEW 롬앤♥산리오캐릭터즈]</h1>
                 <p>어떤 나라도 좋아, Whatever girls<br>
@@ -326,6 +354,7 @@
         </section>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./script/common.js"></script>
 </body>
 </html>

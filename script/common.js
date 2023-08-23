@@ -1,3 +1,23 @@
+// header nav 서브메뉴
+const sub = $('.sub')
+const nav = $('nav > ul > li')
+sub.hide()
+//메뉴에 마우스 올렸을 때 서브 출력
+nav.on('mouseover',function(){
+    // sub.show()
+    // sub.stop().slideDown() //한번에 출력
+    //stop()은 마우스커서가 중복되지 않도록 하는 메서드
+    //slideDown()은 메뉴가 슬라이드로 보이도록 하는 메서드
+    $(this).find('.sub').stop().slideDown() //마우스를 올린 자식만 슬라이드로 보여줌
+    $(this).find('> a').css('fontWeight','700')
+})
+nav.on('mouseout',function(){
+    // sub.hide()
+    // sub.stop().slideUp()
+    sub.stop().slideUp()
+    $(this).find('> a').css('fontWeight','400')
+})
+
 const main_swiper = new Swiper('#main_slide', {
     direction:'horizontal',
     loop:true,

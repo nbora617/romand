@@ -1,0 +1,227 @@
+/* main */
+main {width:100%; margin:0 auto;}
+/* main - 메인 슬라이드 영역 */
+main #main_slide {width:100%; height:100vh;}
+main #main_slide .swiper-wrapper {position:relative;}
+main #main_slide .swiper-wrapper .swiper-slide {}
+/* 슬라이드 txt영역 */
+main #main_slide .swiper-wrapper .swiper-slide .txt {
+    position:absolute; left:130px; bottom:127px;
+}
+main #main_slide .swiper-wrapper .swiper-slide .txt h2,
+main #main_slide .swiper-wrapper .swiper-slide .txt h2 em {
+    font-size:2.369rem; font-weight:500; 
+    letter-spacing:-0.02rem; line-height:55px;
+}
+main #main_slide .swiper-wrapper .swiper-slide .txt p {
+    font-size:1.777rem; letter-spacing:-0.02rem; line-height:50px;
+    color:#9C9C9B; margin-bottom:45px;
+}
+main #main_slide .swiper-wrapper .swiper-slide .txt a {
+    display:flex; align-items:center; width:300px;
+    padding:15px 20px; border:1px solid #222; border-radius:30px;
+}
+main #main_slide .swiper-wrapper .swiper-slide .txt a span {
+    font-size:1.777rem; letter-spacing:-0.02rem; 
+    margin-right:30px;
+}
+main #main_slide .swiper-wrapper .swiper-slide .txt a img {}
+/* 슬라이드 개별영역 */
+/* 1 */
+main #main_slide .swiper-wrapper .slide1 {
+    background:url(../image/bnr_bg1.jpg) no-repeat center;
+    background-size:cover;
+}
+/* 2 */
+main #main_slide .swiper-wrapper .slide2 {
+    background:url(../image/bnr_bg6.jpg) no-repeat center;
+    background-size:cover;
+}
+main #main_slide .swiper-wrapper .slide2 h2 img {width:50%; margin-top:15px;}
+/* 3 */
+main #main_slide .swiper-wrapper .slide3 {
+    background:url(../image/bnr_bg3.jpg) no-repeat center;
+    background-size:cover;
+}
+/* 4 */
+main #main_slide .swiper-wrapper .slide4 {
+    background:url(../image/bnr_bg4.jpg) no-repeat center;
+    background-size:cover;
+}
+/* 5 */
+main #main_slide .swiper-wrapper .slide5 {
+    background:url(../image/bnr_bg5.jpg) no-repeat center;
+    background-size:cover;
+}
+/* 6 */
+main #main_slide .swiper-wrapper .slide6 {
+    background:url(../image/bnr_bg6.jpg) no-repeat center;
+    background-size:cover;
+}
+/* 7 */
+main #main_slide .swiper-wrapper .slide7 {
+    background:url(../image/bnr_bg7.jpg) no-repeat center;
+    background-size:cover;
+}
+/* 슬라이드 페이지네이션 */
+main #main_slide .swiper-pagination-bullet {
+    /* pagination은 기본이 파란색 bullet */
+    background-color:black;
+} 
+/* 슬라이드 이전, 다음버튼 */
+main #main_slide .swiper-button-prev, 
+main #main_slide .swiper-button-next {width:50px; height:50px;}
+main #main_slide .swiper-button-prev {
+    background:url(../image/bnr_slide_prev.png) no-repeat;
+}
+main #main_slide .swiper-button-next {
+    background:url(../image/bnr_slide_next.png) no-repeat;
+}
+main #main_slide .swiper-button-prev::after,
+main #main_slide .swiper-button-next::after {display:none;}
+
+/* 상품리스트 영역 */
+main section {
+    text-align:center; padding:70px 0;
+}
+main section h2 {
+    font-size:2.369rem; font-weight:700; letter-spacing:-0.02rem; margin-bottom:30px;
+}
+main section .swiper {max-width:70%; height:600px; margin:0 auto;}
+main section .swiper .swiper-wrapper {}
+main section .swiper .swiper-wrapper .swiper-slide {
+    margin-right:20px; /* background:palevioletred; */
+    width:(100% - 20px);
+}
+main section .swiper .swiper-wrapper .swiper-slide > a {
+    display:block; margin-bottom:15px; width:100%; height:70%; overflow:hidden;
+}
+main section .swiper .swiper-wrapper .swiper-slide a img {}
+main section .swiper .swiper-wrapper .swiper-slide .contents {text-align:left;}
+main section .swiper .swiper-wrapper .swiper-slide .contents >* {margin-bottom:10px;}
+main section .swiper .swiper-wrapper .swiper-slide .contents h1 {}
+main section .swiper .swiper-wrapper .swiper-slide .contents h1 a {
+    font-size:1.25rem; letter-spacing:-0.02rem; font-weight:500;
+}
+main section .swiper .swiper-wrapper .swiper-slide .contents .price >* {margin-right:10px;}
+main section .swiper .swiper-wrapper .swiper-slide .contents .price em {
+    font-size:1.25rem; letter-spacing:-0.02rem; font-weight:500;
+}
+main section .swiper .swiper-wrapper .swiper-slide .contents .price del {
+    text-decoration:line-through; color:#999;
+}
+main section .swiper .swiper-wrapper .swiper-slide .contents .price span {
+    font-size:1.125rem; letter-spacing:-0.02rem; font-weight:500; color:#CD3142
+}
+main section .swiper .swiper-wrapper .swiper-slide .contents p {}
+main section .swiper .swiper-wrapper .swiper-slide .contents p img {}
+main section .swiper .swiper-wrapper .swiper-slide .contents .ect {margin-top:15px;}
+main section .swiper .swiper-wrapper .swiper-slide .contents .ect >* {
+    padding:5px; border:1px solid #000; 
+    font-size:0.75rem; letter-spacing:-0.02rem;
+}
+/* 슬라이드 페이지네이션 */
+main section .swiper .swiper-pagination {bottom:0;}
+main section .swiper .swiper-pagination-bullet {
+    /* pagination은 기본이 파란색 bullet */
+    background-color:black;
+} 
+/* 슬라이드 이전, 다음버튼 */
+main section .swiper .swiper-button-prev, 
+main section .swiper .swiper-button-next {
+    width:50px; height:50px; margin:-120px 0 0;
+}
+main section .swiper .swiper-button-prev {
+    background:url(../image/prev.png) no-repeat;
+
+}
+main section .swiper .swiper-button-next {
+    background:url(../image/next.png) no-repeat;
+}
+main section .swiper .swiper-button-prev::after,
+main section .swiper .swiper-button-next::after {display:none;}
+/* 베스트상품 개별영역 */
+main #best_sellers #best_slide .swiper-wrapper .swiper-slide .contents .ect .new {
+    color:#CD3142; border-color:#CD3142;
+}
+/* 신상품 개별영역 */
+main #new_arrivals #new_slide .swiper-wrapper .swiper-slide .contents .ect .only {
+    color:#fff; background-color:#9CBDE8; border:none;
+}
+main #best_sellers #best_slide .swiper-wrapper .item1 {}
+main #best_sellers #best_slide .swiper-wrapper .item2 {}
+main #best_sellers #best_slide .swiper-wrapper .item3 {}
+main #best_sellers #best_slide .swiper-wrapper .item4 {}
+main #best_sellers #best_slide .swiper-wrapper .item5 {}
+main #best_sellers #best_slide .swiper-wrapper .item6 {}
+/* 하단 슬라이드 영역 */
+main #bnr_slide {
+    width:100%; height:200px; margin-bottom:0;
+}
+main #bnr_slide .swiper-wrapper {}
+main #bnr_slide .swiper-wrapper .swiper-slide {
+    background:url(../image/adv_bnr.jpg) no-repeat center;
+    background-size:cover;
+}
+main #bnr_slide .swiper-wrapper .slide1 {}
+main #bnr_slide .swiper-wrapper .slide2 {}
+main #bnr_slide .swiper-wrapper .slide3 {}
+/* 비디오 영역 */
+main #visual {
+     /* 조건: ★ 비디오의 부모가 vh 또는 px 높이 설정 준비  */
+    position:relative;
+    height:100vh; overflow:hidden;
+}
+main #visual video {
+    width:80%;
+    /* 화면 크기 조정시 비디오 중심축 맞추기 */
+    /* 조건: ★ 비디오의 부모가 vh 또는 px 높이 설정 준비  */
+    position:absolute; left:50%;
+    transform:translateX(-50%);
+}
+main #visual .txt {
+    width:100%; text-align:center;
+    position:absolute; bottom:10%; z-index:999;
+}
+main #visual .txt h1 {
+    font-size:3.157rem; font-weight:700; letter-spacing:-0.02em;
+    color:#fff; margin:20px 0;  
+}
+main #visual .txt p {
+    font-size:2.369rem; letter-spacing:-0.02em; color:#fff;
+    line-height:60px;
+}
+/* 이벤트 영역 */
+main #event {}
+main #event h2 {}
+main #event #event_slide {}
+main #event #event_slide .swiper-wrapper {}
+main #event #event_slide .swiper-wrapper .swiper-slide {
+    text-align:left; width:500px; height:500px;
+    position:relative;
+}
+main #event #event_slide .swiper-wrapper .swiper-slide .txt {
+    opacity:0;
+    position:absolute; bottom:30px; left:20px; 
+    width:80%; transition:all 0.5s;
+}
+main #event #event_slide .swiper-wrapper .swiper-slide:hover .txt {
+    opacity:1;
+}
+main #event #event_slide .swiper-wrapper .swiper-slide .txt h1 {
+    font-size:1.333rem; font-weight:700; 
+    line-height:35px; letter-spacing:-0.02rem;
+    padding:10px 0; border-bottom:1px solid #222;
+}
+main #event #event_slide .swiper-wrapper .swiper-slide .txt p {
+    padding:10px 0;
+}
+main #event #event_slide .swiper-wrapper .slide1 {
+    background:url(../image/event1.jpg) no-repeat;
+}
+main #event #event_slide .swiper-wrapper .slide2 {
+    background:url(../image/event2.jpg) no-repeat;
+}
+main #event #event_slide .swiper-wrapper .slide3 {
+    background:url(../image/event3.jpeg) no-repeat;
+}

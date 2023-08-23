@@ -20,6 +20,8 @@
     <!-- 외부스타일시트 -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
     <header>
@@ -61,15 +63,267 @@
     <main>
         <div class="swiper" id="main_slide">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide1">Slide 1</div>
-                <div class="swiper-slide slide2">Slide 2</div>
-                <div class="swiper-slide slide3">Slide 3</div>
-                <div class="swiper-slide slide4">Slide 3</div>
-                <div class="swiper-slide slide5">Slide 3</div>
-                <div class="swiper-slide slide6">Slide 3</div>
-                <div class="swiper-slide slide7">Slide 3</div>
+                <div class="swiper-slide slide1">
+                    <div class="txt">
+                        <h2>서울사는 룸메이트<br><em>오늘 주문! 내일 도착!</em></h2>
+                        <p>롬앤 제품 하나만 주문해도 서울이라면 가능</p>
+                        <a href="#">
+                            <span>자세히 보러가기</span>
+                            <img src="./image/chevron_right.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide2">
+                    <div class="txt">
+                        <h2>코덕이 상상하던 새로운 공간<br><img src="./image/coha.png" alt=""></h2>
+                        <p>내가 만든 컬러가 출시된다?!</p>
+                        <a href="#">
+                            <span>자세히 보러가기</span>
+                            <img src="./image/chevron_right.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide3"></div>
+                <div class="swiper-slide slide4"></div>
+                <div class="swiper-slide slide5"></div>
+                <div class="swiper-slide slide6"></div>
+                <div class="swiper-slide slide7"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
+        <!-- 베스트셀러 영역 -->
+        <section id="best_sellers">
+            <h2>BEST SELLERS</h2>
+            <div class="swiper" id="best_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item1">
+                        <a href="#"><img src="./image/item1.jpg" alt=""></a>
+                        <div class="contents">
+                            <h1><a href="#">롬앤 트윙클 팬 라이너</a></h1>
+                            <div class="price">
+                                <em>9,900원</em>
+                                <del>13,000</del>
+                                <span>24%</span>
+                            </div>
+                            <p><img src="./image/review.png" alt="">4.7(111)</p>
+                            <div class="ect">
+                                <span class="hit">HIT</span>
+                                <span class="new">NEW</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item2">
+                        <a href="#"><img src="./image/item1.jpg" alt=""></a>
+                        <div class="contents">
+                            <h1><a href="#">롬앤 트윙클 팬 라이너</a></h1>
+                            <div class="price">
+                                <em>9,900원</em>
+                                <del>13,000</del>
+                                <span>24%</span>
+                            </div>
+                            <p><img src="./image/review.png" alt="">4.7(111)</p>
+                            <div class="ect">
+                                <span class="hit">HIT</span>
+                                <span class="new">NEW</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item3">
+                        <a href="#"><img src="./image/item1.jpg" alt=""></a>
+                        <div class="contents">
+                            <h1><a href="#">롬앤 트윙클 팬 라이너</a></h1>
+                            <div class="price">
+                                <em>9,900원</em>
+                                <del>13,000</del>
+                                <span>24%</span>
+                            </div>
+                            <p><img src="./image/review.png" alt="">4.7(111)</p>
+                            <div class="ect">
+                                <span class="hit">HIT</span>
+                                <span class="new">NEW</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item4">
+                        <a href="#"><img src="./image/item1.jpg" alt=""></a>
+                        <div class="contents">
+                            <h1><a href="#">롬앤 트윙클 팬 라이너</a></h1>
+                            <div class="price">
+                                <em>9,900원</em>
+                                <del>13,000</del>
+                                <span>24%</span>
+                            </div>
+                            <p><img src="./image/review.png" alt="">4.7(111)</p>
+                            <div class="ect">
+                                <span class="hit">HIT</span>
+                                <span class="new">NEW</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item5">
+                        <a href="#"><img src="./image/item1.jpg" alt=""></a>
+                        <div class="contents">
+                            <h1><a href="#">롬앤 트윙클 팬 라이너</a></h1>
+                            <div class="price">
+                                <em>9,900원</em>
+                                <del>13,000</del>
+                                <span>24%</span>
+                            </div>
+                            <p><img src="./image/review.png" alt="">4.7(111)</p>
+                            <div class="ect">
+                                <span class="hit">HIT</span>
+                                <span class="new">NEW</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 페이지네이션 -->
+                <div class="swiper-pagination"></div>
+                <!-- 슬라이드 이전,디음 버튼 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <!-- 신상품 영역 -->
+        <section id="new_arrivals">
+            <h2>NEW ARRIVALS</h2>
+            <div class="swiper" id="new_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item1">
+                        <a href="#"><img src="./image/item2.jpg" alt=""></a>
+                        <div class="contents">
+                            <h1><a href="#">[ONLY 공식몰] 롬앤 립 메이트 펜슬</a></h1>
+                            <div class="price">
+                                <em>6,900원</em>
+                                <del>13,000</del>
+                                <span>47%</span>
+                            </div>
+                            <p><img src="./image/review.png" alt="">4.7(3)</p>
+                            <div class="ect">
+                                <span class="only">공식몰 전용</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item2">
+                        <a href="#"><img src="./image/item2-1.jpg" alt=""></a>
+                        <div class="contents">
+                            <h1><a href="#">[ONLY 공식몰] 롬앤 립 메이트 펜슬</a></h1>
+                            <div class="price">
+                                <em>6,900원</em>
+                                <del>13,000</del>
+                                <span>47%</span>
+                            </div>
+                            <p><img src="./image/review.png" alt="">4.7(3)</p>
+                            <div class="ect">
+                                <span class="only">공식몰 전용</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item3">
+                        <a href="#"><img src="./image/item2.jpg" alt=""></a>
+                        <div class="contents">
+                            <h1><a href="#">[ONLY 공식몰] 롬앤 립 메이트 펜슬</a></h1>
+                            <div class="price">
+                                <em>6,900원</em>
+                                <del>13,000</del>
+                                <span>47%</span>
+                            </div>
+                            <p><img src="./image/review.png" alt="">4.7(3)</p>
+                            <div class="ect">
+                                <span class="only">공식몰 전용</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item4">
+                        <a href="#"><img src="./image/item2-1.jpg" alt=""></a>
+                        <div class="contents">
+                            <h1><a href="#">[ONLY 공식몰] 롬앤 립 메이트 펜슬</a></h1>
+                            <div class="price">
+                                <em>6,900원</em>
+                                <del>13,000</del>
+                                <span>47%</span>
+                            </div>
+                            <p><img src="./image/review.png" alt="">4.7(3)</p>
+                            <div class="ect">
+                                <span class="only">공식몰 전용</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item3">
+                        <a href="#"><img src="./image/item2.jpg" alt=""></a>
+                        <div class="contents">
+                            <h1><a href="#">[ONLY 공식몰] 롬앤 립 메이트 펜슬</a></h1>
+                            <div class="price">
+                                <em>6,900원</em>
+                                <del>13,000</del>
+                                <span>47%</span>
+                            </div>
+                            <p><img src="./image/review.png" alt="">4.7(3)</p>
+                            <div class="ect">
+                                <span class="only">공식몰 전용</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 페이지네이션 -->
+                <div class="swiper-pagination"></div>
+                <!-- 슬라이드 이전, 다음 버튼 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <div class="swiper" id="bnr_slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"></div>
+                <div class="swiper-slide slide2"></div>
+                <div class="swiper-slide slide3"></div>
+            </div>
         </div>
+        <section id="visual">
+            <video src="./image/video.mp4" autoplay muted loop></video>
+            <div class="txt">
+                <h1>[NEW 롬앤♥산리오캐릭터즈]</h1>
+                <p>어떤 나라도 좋아, Whatever girls<br>
+                사랑스럽고 앙큼한 롬앤♥산리오캐릭터즈</p>
+            </div>
+        </section>
+        <section id="event">
+            <h2>EVENT</h2>
+            <div class="swiper" id="event_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="txt">
+                            <h1>코덕이 상상하던<br>새로운 공간<br>coming soon</h1>
+                            <p>2023-08-04 ~</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="txt">
+                            <h1>코덕이 상상하던<br>새로운 공간<br>coming soon</h1>
+                            <p>2023-08-04 ~</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <div class="txt">
+                            <h1>코덕이 상상하던<br>새로운 공간<br>coming soon</h1>
+                            <p>2023-08-04 ~</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="membership">
+            <div class="title">
+                <div class="left">
+                    <h1>롬앤 멤버쉽 혜택 안내</h1>
+                    <p>롬앤 멤버쉽 회원이 되시면 롬앤에서 제공하는 다양한 혜택을 받으실 수 있습니다.</p>
+                </div>
+                <p class="link"><span>혜택더보기</span><img src="" alt=""></p>
+            </div>
+            
+        </section>
     </main>
 
     <script src="./script/common.js"></script>

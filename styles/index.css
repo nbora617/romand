@@ -24,7 +24,7 @@ main #main_slide .txt-box > h2 {
 }
 main #main_slide .txt-box > p {
     color: #000; font-size: 1.375rem; line-height:35px;
-    margin-top: 400px; 
+    margin-top: 300px; 
     transform: translateY(20px);
     opacity: 0;
     /* word-break: keep-all; */

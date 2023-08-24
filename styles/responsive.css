@@ -1,32 +1,53 @@
 @media screen and (max-width:1440px){
-    header .fix_top .nav_lnb nav a {font-size:1.25rem; padding:10px;}
-}
-@media screen and (max-width:1000px){
     /* header */
-    header .gnb a {font-size: 0.875rem;}
-    header .fix_top .nav_lnb nav a {font-size:1.1rem; padding:5px; margin-right:15px}
+    
+    header nav > ul > li {margin-right:10px;}
+    header nav > ul > li:last-child {margin-right:0;}
+    /* main */
+    /* main-slide */
+    main #main_slide .swiper-wrapper .slide3 {
+        background-image:url(../image/main_bnr1_1440px.jpg);}
+    /* main .visual video {width:auto; height:100%;} */
+}
+@media screen and (max-width:1200px){
+    /* header */
+    header h1 {width:100px; line-height:70px;}
+    header nav > ul > li > a {font-size:1rem; padding:15px;}
+    header .gnb a {line-height:30px;}
+    header .gnb a img {width:70%;}
+    header .gnb a:nth-child(2) {margin:0 10px;}
+    /* main */
+    /* main-slide */
+    main #main_slide .swiper-wrapper .swiper-slide {
+        background-image:url(../image/main_bnr1_1200px.jpg);}
+}
+@media screen and (max-width:900px){
+    /* header */
+    header nav {display:none;}
+    header .gnb {display:none;}
+    header #m_menu {display:flex;}
     /* 매인 슬라이드 */
     main #main_slide {width:100%; height:422px;}
     main #main_slide .swiper-wrapper .swiper-slide {
         background-image:url(../image/bnr_bg1_m.jpg);
     }
-    main #main_slide .swiper-wrapper .swiper-slide .txt {
-        position:absolute; left:70px; bottom:40px;
+    main #main_slide .swiper-wrapper .swiper-slide .txt-box {
+        position:absolute; left:50%; top:60%;
     }
-    main #main_slide .swiper-wrapper .swiper-slide .txt h2,
-    main #main_slide .swiper-wrapper .swiper-slide .txt h2 em {
-        font-size:1.333rem; line-height:30px;
-    }
-    main #main_slide .swiper-wrapper .swiper-slide .txt p {
-        font-size:1.125rem; line-height:30px; margin-bottom:10px; 
-    }
-    main #main_slide .swiper-wrapper .swiper-slide .txt a {
-        width:180px; padding:5px 10px;
-    }
-    main #main_slide .swiper-wrapper .swiper-slide .txt a span {font-size:1.125rem; margin-right:10px;}
+    main #main_slide .txt-box > h2 {font-size:1.333rem; line-height:40px;}
+    main #main_slide .txt-box > p {font-size:0.875rem;; line-height:25px; margin-top:80px;}
+    main #main_slide .txt-box > a  {padding:5px; margin-top:10px;}
+    main #main_slide .txt-box > a span {font-size:0.75rem;}
+    main #main_slide .txt-box > a .fa-solid {font-size:0.75rem;}
     /* 상품리스트 영역 */
     /* main section* {width:90%; height:150px;} */
-    main section h2 {font-size:1.777rem;}
+    main section h2 {font-size:1.777rem; margin-top:10px;}
+    /* main -visual */
+    main #visual {height:500px; width:calc(100% - 60px); margin:0 auto;}
+    main #visual .txt-box h1 {font-size:2.369rem;}
+    main #visual .txt-box p {font-size:1.777rem; line-height:25px;}
+    main #visual .txt-box a {font-size:1rem;}
+
 
 
 }

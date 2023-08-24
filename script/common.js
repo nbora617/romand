@@ -23,34 +23,16 @@ const main_swiper = new Swiper('#main_slide', {
     loop:true,
     autoplay:{delay:3000}, //자동재생
     speed:800, //슬라이드 전환 시 부드러운 전환
-    // 애니메이션
-    // on:{ //슬라이드의 글자가 나타나고 사라지는 기능
-    //     init:function(){
-    //         //슬라이드 변경되기 전 초기 실행함수
-    //         this.slides[this.activeIndex].querySelector('.txt').style.opacity = '1';
-    //     },
-    //     slideChange:function(){
-    //         //슬라이드 변경될 때 인식되는 실행함수
-    //         //1. 활성화 전 모든 슬라이드 opacity:0\
-    //         this.slides.forEach(target => {
-    //             target.querySelector('.txt').style.opacity = '0';
-    //             target.querySelector('.txt').style.transform = 'translateY(30px)';
-                
-    //         })
-    //         //2. 활성화 슬라이드만 opacity:1
-    //         this.slides[this.activeIndex].querySelector('.txt').style.opacity = '1';
-    //         this.slides[this.activeIndex].querySelector('.txt').style.transform = 'translateY(0)';
-    //     }
-    // },
-    // 페이지네이션
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 2000,
+    },
     pagination: {
         el: '.swiper-pagination',
-        clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
-    },
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        type: 'bullets',
     },
 })
 

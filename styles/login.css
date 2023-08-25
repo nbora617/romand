@@ -1,0 +1,90 @@
+main {}
+main #login-box {
+    margin:0 auto;
+    padding:50px 30px; width:400px; text-align:center;
+}
+main #login-box >* {width:100%; margin-bottom:50px;}
+main #login-box h1 {
+    font-size:1.777rem; font-weight:700;
+}
+main #login-box #kakao_login {
+    padding:10px; background:#FFE500; border-radius:5px;
+    display:flex; flex-flow:row nowrap; align-items:center; justify-content:center;
+}
+main #login-box #kakao_login img {margin-right:10px;}
+main #login-box #kakao_login span {}
+main #login-box .tab_title {
+    width:100%;
+    display:flex; flex-flow:row nowrap;
+}
+main #login-box .tab_title a {
+    display:block; width:50%;
+    padding:10px; border:1px solid #aaa; color:#e9e9e9;
+    background-color:#fff;
+}
+main #login-box .tab_title .active {
+    color:#fff; font-weight:500; background-color:#222;
+}
+/* 회원용, 비회원용 공통영역 */
+button {
+    width:100%; background:#D3D2D2; padding:10px; border-radius:5px;
+    margin-top:50px;
+}
+/* 회원용 */
+main #login-box .tab_contents {}
+main #login-box .tab_contents #loginFrm {margin-bottom:50px;}
+main #login-box .tab_contents #loginFrm fieldset {}
+main #login-box .tab_contents #loginFrm fieldset .user_info {}
+main #login-box .tab_contents #loginFrm fieldset .user_info >* {margin-bottom:10px;}
+main #login-box .tab_contents #loginFrm fieldset .user_info #userId,
+main #login-box .tab_contents #loginFrm fieldset .user_info #userPw {
+    width:100%;
+    padding:10px 20px; border:1px solid #aaa; border-radius:5px;
+}
+main #login-box .tab_contents #loginFrm fieldset .user_info input::placeholder {color:#D3D2D2;}
+main #login-box .tab_contents #loginFrm fieldset .user_info .check {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+main #login-box .tab_contents #loginFrm fieldset .user_info label {}
+main #login-box .tab_contents #loginFrm fieldset .user_info label #Id {appearance:none;}
+main #login-box .tab_contents #loginFrm fieldset .user_info label span {
+    background:url(../image/unchecked.png) no-repeat;
+    background-position-y:4px;
+    padding-left:20px; font-size:0.875rem;
+}
+main #login-box .tab_contents #loginFrm fieldset .user_info label input:checked+span {
+    background-image:url(../image/checked.png);
+}
+main #login-box .tab_contents #loginFrm fieldset .user_info a {font-size:0.875rem;}
+main #login-box .tab_contents #loginFrm fieldset #loginBtn {}
+main #login-box .tab_contents .web-join {
+    display:flex; flex-flow:row nowrap;
+}
+main #login-box .tab_contents .web-join a {
+    width:calc(50% - 5px);
+    padding:10px; border:1px solid #222; margin-right:5px; border-radius:5px;
+    display:flex; align-items:center; justify-content:center;
+}
+main #login-box .tab_contents .web-join a img {margin-right:5px;}
+main #login-box .tab_contents .web-join a span {
+    font-size:0.875rem;
+}
+/* 비회원용 */
+main #login-box .tab_contents {}
+main #login-box .tab_contents #orderFrm {margin-bottom:50px;}
+main #login-box .tab_contents #orderFrm .user_info >* {margin-bottom:10px;}
+main #login-box .tab_contents #orderFrm fieldset .user_info #userName,
+main #login-box .tab_contents #orderFrm fieldset .user_info #orderNum {
+    width:100%;
+    padding:10px 20px; border:1px solid #aaa; border-radius:5px;
+}
+main #login-box .tab_contents #orderFrm .user_info #orderBtn {}
+main #login-box .tab_contents p {
+    font-size:0.75rem; letter-spacing:-0.02rem; font-weight:500;
+    padding-bottom:50px; border-bottom:1px solid #aaa;
+}
+main #login-box .tab_contents p img {margin-right:5px; width:3%}
+main #login-box > p {
+    font-size:0.875rem; letter-spacing:-0.02rem; line-height:25px;
+}
+main #login-box > p em {font-weight:500;}

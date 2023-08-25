@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 | 롬앤</title>
+    <!-- swiper -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./image/favicon.png" type="image/x-icon">
+    <!-- 글꼴 --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- 외부스타일시트 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+<body>
+    <!-- header.php -->
+    <main>
+        <section id="login-box">
+            <h1>로그인</h1>
+            <a href="#" id="kakao_login"><img src="./image/talk.png" alt=""><span>카카오 1초 로그인/회원가입</span></a>
+            <div class="tab_title">
+                <a href="#" class="active">회원</a>
+                <a href="#">비회원 주문조회</a>
+            </div>
+            <!-- 회원로그인 -->
+            <div class="tab_contents">
+                <div class="tab_c1 active">
+                    <form action="#" method="get" id="loginFrm">
+                        <fieldset>
+                            <legend class="skip">로그인 양식</legend>
+                            <div class="user_info">
+                                <input type="text" id="userId" placeholder="아이디">
+                                <input type="password" id="userPw" placeholder="비밀번호">
+                                <div class="check">
+                                    <label for="Id">
+                                        <input type="checkbox" id="Id" checked><span>아이디 저장</span>
+                                    </label>
+                                    <a href="#">아이디/비밀번호 찾기</a>
+                                </div>
+                            </div>
+                            <button type="submit" id="loginBtn">로그인</button>
+                        </fieldset>
+                    </form>
+                    <div class="web-join">
+                        <a href="#"><img src="./image/login_user.png" alt=""><span>일반 회원가입</span></a>
+                        <a href="#"><img src="./image/naver.png" alt=""><span>네이버 로그인</span></a>
+                    </div>
+                </div>
+                <div class="tab_c2">
+                    <form action="#" method="get" id="orderFrm">
+                        <fieldset>
+                            <legend class="skip">비회원 주문조회</legend>
+                            <div class="user_info">
+                                <input type="text" id="userName" placeholder="주문자명">
+                                <input type="text" id="orderNum" placeholder="주문번호">
+                            </div>
+                            <button type="submit" id="orderBtn">주문/배송 조회하기</button>
+                        </fieldset>
+                    </form>
+                    <p><img src="./image/error.png" alt="">주문번호를 잊으신 경우, 고객센터로 문의하여 주시기 바랍니다.</p>
+                </div>
+            </div>
+            <p><em>카카오 1초 회원가입이란?</em><br>
+                    카카오톡으로  이름, 주소 입력없이 구매가 빨라지는 회원가입</p>
+        </section>
+    </main>
+    <!-- footer.php -->
+    <!-- 외부스크립트 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./script/common.js"></script>
+    <!-- 내부스크립트 -->
+    <script>
+        const tab_title = $('.tab_title')
+        const tab_contents = $('.tab_contents')
+        tab_title.forEach(function(target, index, array){
+            this.click(function(e){
+                e.preventDefault()
+                for(let i of tab_contents){i.style.display='none'}
+                tab_title[index].style.display='block'
+                for(let i of tab_title){
+                    i.style.backgroundColor='#fff'
+                    i.style.color='#e9e9e9'
+                }
+                tab_title[index].style.backgroundColor='#000'
+                tab_title[index].style.color='#fff'
+            })
+        });
+    </script>
+</body>
+</html>

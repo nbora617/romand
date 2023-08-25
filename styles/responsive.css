@@ -24,8 +24,10 @@
 @media screen and (max-width:900px){
     /* header */
     header nav {display:none;}
-    header .gnb {display:none;}
-    header #all_m_menu {display:block;}
+    header .gnb .user, header .gnb .cart  {display:none;}
+    header .gnb .searchGnb img {width:100%;}
+    /* m_menu */
+    header .head_bg #all_m_menu {display:block;}
     /* 매인 슬라이드 */
     main #main_slide {width:100%; height:422px;}
     main #main_slide .swiper-wrapper .swiper-slide {

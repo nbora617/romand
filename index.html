@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,90 +74,74 @@
                 </ul>
             </nav>
             <div class="gnb">
-                <a href="#"><img src="./image/search.png" alt="검색"></a>
-                <a href="#"><img src="./image/User.png" alt="로그인"></a>
-                <a href="#"><img src="./image/cart.png" alt="장바구니"></a>
+                <a href="#" class="searchGnb"><img src="./image/search.png" alt="검색"></a>
+                <a href="#" class="user"><img src="./image/User.png" aria-hidden="true" alt="로그인"></a>
+                <a href="#" class="cart"><img src="./image/cart.png" aria-hidden="true" alt="장바구니"></a>
+                <div id="all_m_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> 
             </div>
-            <div id="a11_m_menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div> 
         </div>
         <!-- open_m_menu -->
         <div class="open_m_menu">
             <h1><a href="#"><img src="./image/logo_dark.png" alt="롬앤"></a></h1>
             <button type="button" id="close"><img src="./image/close.png" alt="닫기"></button>
-        </div>
-
-            <!-- <div id="menu-container">
-                <div id="menu-wrap">
-                    <div id="m-menu">
-                        <span></span><span></span><span></span>
-                    </div>
-                    hamburger-menu
-                </div>
-                menu-wrapper
-                
-                <ul class="menu-box">
-                    <li id="nav1" class="toggle accordion-toggle"> 
-                        <span class="icon-plus"></span>
-                        <a class="menu-link" href="#">BRAND</a>
-                    </li>
-                    <ul class="menu-submenu accordion-content">
-                        <li><a class="head" href="#">롬앤 소개</a></li>
-                        <li><a class="head" href="#">롬앤 소식</a></li>
-                    </ul> 
-                    <li id="nav2" class="toggle accordion-toggle"> 
-                        <span class="icon-plus"></span>
-                        <a class="menu-link" href="#">SHOP</a>
-                    </li>
-                        <ul class="menu-submenu accordion-content">
-                            <li><a class="head" href="#">전체</a></li>
-                            <li><a class="head" href="#">BASE</a></li>
-                            <li><a class="head" href="#">EYE</a></li>
-                            <li><a class="head" href="#">LIP</a></li>
-                            <li><a class="head" href="#">NALE</a></li>
-                            <li><a class="head" href="#">TOOL</a></li>
-                            <li><a class="head" href="#">SET</a></li>
-                            <li><a class="head" href="#">EDITION</a></li>
-                        </ul>
-                    <li id="nav3" class="toggle accordion-toggle"> 
-                        <span class="icon-plus"></span>
-                        <a class="menu-link" href="#">LOOK</a>
-                    </li>
-                        <ul class="menu-submenu accordion-content">
-                            <li><a class="head" href="#">룩튜토리얼</a></li>
-                        </ul>
-                    <li id="nav3" class="toggle accordion-toggle"> 
-                        <span class="icon-plus"></span>
-                        <a class="menu-link" href="#">EVENT</a>
-                    </li>
-                        <ul class="menu-submenu accordion-content">
-                            <li><a class="head" href="#">진행중</a></li>
-                            <li><a class="head" href="#">종료</a></li>
-                        </ul>
-                    <li id="nav3" class="toggle accordion-toggle"> 
-                        <span class="icon-plus"></span>
-                        <a class="menu-link" href="#">COMMUNITY</a>
-                    </li>
-                        <ul class="menu-submenu accordion-content">
-                            <li><a class="head" href="#">NOTICE</a></li>
-                            <li><a class="head" href="#">REVIEW</a></li>
-                            <li><a class="head" href="#">Q&A</a></li>
-                        </ul>
-                    <li id="nav3" class="toggle accordion-toggle"> 
-                        <span class="icon-plus"></span>
-                        <a class="menu-link" href="#">PROJECT</a>
-                    </li>
-                        <ul class="menu-submenu accordion-content">
-                            <li><a class="head" href="#">케미프로젝트</a></li>
-                        </ul>
-                </ul>
-                menu-list accordion
+            <ul class="m_menu">
+                <li>
+                    <a href="#"><span>BRAND</span><i class="fa-solid fa-chevron-right fa-rotate-90"></i></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">롬앤 소개</a></li>
+                        <li><a href="#">롬앤 소식</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span>SHOP</span><i class="fa-solid fa-chevron-right fa-rotate-90"></i></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">전체</a></li>
+                        <li><a href="#">BASE</a></li>
+                        <li><a href="#">EYE</a></li>
+                        <li><a href="#">LIP</a></li>
+                        <li><a href="#">NAIL</a></li>
+                        <li><a href="#">TOOL</a></li>
+                        <li><a href="#">SET</a></li>
+                        <li><a href="#">EDITION</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span>LOOK</span><i class="fa-solid fa-chevron-right fa-rotate-90"></i></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">룩튜토리얼</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span>EVENT</span><i class="fa-solid fa-chevron-right fa-rotate-90"></i></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">진행중</a></li>
+                        <li><a href="#">종료</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span>COMMUNITY</span><i class="fa-solid fa-chevron-right fa-rotate-90"></i></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">REVIEW</a></li>
+                        <li><a href="#">Q&A</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span>PROJECT</span><i class="fa-solid fa-chevron-right fa-rotate-90"></i></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">케미프로젝트</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="m_menu_gnb">
+                <a href="#">MY PAGE</a>
+                <a href="#">고객센터</a>
             </div>
-        </div> -->
-        
+        </div>
     </header>
     <main>
         <div class="swiper" id="main_slide">
@@ -454,6 +438,7 @@
         </div>
         <div class="f_btm">
             <div class="left">
+                <h1><a href=""><img src="./image/logo_dark.png" alt="롬앤"></a></h1>
                 <address>
                     (주)아이패밀리SC<br>
                     서울특별시 송파구 동남로 122(문정동) COLLECTED 빌딩 Tel : 02.1670.2238 Fax : 02.6910.4111 사업자등록번호 : 120-86-00633통신판매신고번호 : 제2022-서울송파-1690호 대표자 : 김태욱,김성현
@@ -472,5 +457,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./script/common.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>

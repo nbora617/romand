@@ -43,6 +43,7 @@
     /* main section* {width:90%; height:150px;} */
     main section h2 {font-size:1.777rem; margin-top:10px;}
     /* main -visual */
+    /* 화면의 크기비율만 줄이는 방법으로 수정해야함!! */
     main #visual {height:500px; width:calc(100% - 60px); margin:0 auto;}
     main #visual .txt-box h1 {font-size:2.369rem;}
     main #visual .txt-box p {font-size:1.777rem; line-height:25px;}

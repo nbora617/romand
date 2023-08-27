@@ -34,7 +34,7 @@
             </div>
             <!-- 회원로그인 -->
             <div class="tab_contents">
-                <div class="tab_c1 active">
+                <div class="tab_c1">
                     <form action="#" method="get" id="loginFrm">
                         <fieldset>
                             <legend class="skip">로그인 양식</legend>
@@ -56,6 +56,7 @@
                         <a href="#"><img src="./image/naver.png" alt=""><span>네이버 로그인</span></a>
                     </div>
                 </div>
+                <!-- 비회원 -->
                 <div class="tab_c2">
                     <form action="#" method="get" id="orderFrm">
                         <fieldset>
@@ -80,20 +81,50 @@
     <script src="./script/common.js"></script>
     <!-- 내부스크립트 -->
     <script>
-        const tab_title = $('.tab_title')
-        const tab_contents = $('.tab_contents')
-        tab_title.forEach(function(target, index, array){
-            this.click(function(e){
+        //탭메뉴
+        //eq() Jquery의 인덱스
+        $(".tab_contents > div").eq(1).hide();
+        $(document).ready(function() {
+            $(".tab_title a").click(function(e){
                 e.preventDefault()
-                for(let i of tab_contents){i.style.display='none'}
-                tab_title[index].style.display='block'
-                for(let i of tab_title){
-                    i.style.backgroundColor='#fff'
-                    i.style.color='#e9e9e9'
-                }
-                tab_title[index].style.backgroundColor='#000'
-                tab_title[index].style.color='#fff'
+                var i = $(this).index();
+                $(".tab_title a").removeClass("active");
+                $(".tab_title a").eq(i).addClass("active");
+                $(".tab_contents > div").hide();
+                $(".tab_contents > div").eq(i).show();
             })
+        });
+        
+        
+        // 회원용 로그인 영역
+        const Id = document.querySelector('#userId')
+        const Pw = document.querySelector('#userPw')
+        const loginBtn = document.querySelector('#loginBtn') 
+        console.log(Id,Pw,loginBtn)
+        //아이디, 비밀번호 입력하면 메인페이지 이동
+        loginBtn.addEventListener('click',function(e){
+            e.preventDefault();
+            if (Id.value === "" && Pw.value === ""){
+                window.alert("아이디와 비밀번호를 입력하세요");
+            }else if(Id.value === ""){
+                window.alert("아이디를 입력하세요");
+            }else if(Pw.value === ""){
+                window.alert("비밀번호를 입력하세요");
+            }else{location.href='index.html'}
+        });
+        // 비회원 주문조회
+        const userName =document.querySelector('#userName')
+        const orderNum =document.querySelector('#orderNum')
+        const orderBtn =document.querySelector('#orderBtn')
+        orderBtn.addEventListener('click',function(e){
+            e.preventDefault();
+            if (userName.value === "" && orderNum.value === ""){
+                window.alert("주문자명과 주문번호를 입력하세요");
+            }else if(userName.value === ""){
+                window.alert("주문자명을 입력하세요");
+            }else if(orderNum.value === ""){
+                window.alert("주문번호를 입력하세요");
+            }else{location.href='index.html'}
         });
     </script>
 </body>

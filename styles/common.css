@@ -136,7 +136,7 @@ header .open_m_menu .m_menu_gnb a:last-child {margin-right:0;}
 
 /* footer */
 footer {
-    width:calc(100% - 60px); margin:0 auto; padding:70px 0;
+    width:calc(100% - 60px); margin:0 auto; padding:70px 0 30px 0;
     /* position:fixed; left:0; bottom:0;
     z-index:-5; */
 }

@@ -1,25 +1,25 @@
 main {}
 main #login-box {
     margin:0 auto;
-    padding:50px 30px; width:400px; text-align:center;
+    padding:50px 30px; width:500px; text-align:center;
 }
 main #login-box >* {width:100%; margin-bottom:50px;}
 main #login-box h1 {
     font-size:1.777rem; font-weight:700;
 }
 main #login-box #kakao_login {
-    padding:10px; background:#FFE500; border-radius:5px;
+    padding:18px; background:#FFE500; border-radius:5px;
     display:flex; flex-flow:row nowrap; align-items:center; justify-content:center;
 }
 main #login-box #kakao_login img {margin-right:10px;}
-main #login-box #kakao_login span {}
+main #login-box #kakao_login span {font-weight:500;}
 main #login-box .tab_title {
     width:100%;
     display:flex; flex-flow:row nowrap;
 }
 main #login-box .tab_title a {
     display:block; width:50%;
-    padding:10px; border:1px solid #aaa; color:#e9e9e9;
+    padding:18px; border:1px solid #aaa; color:#e9e9e9;
     background-color:#fff;
 }
 main #login-box .tab_title .active {
@@ -27,9 +27,11 @@ main #login-box .tab_title .active {
 }
 /* 회원용, 비회원용 공통영역 */
 button {
-    width:100%; background:#D3D2D2; padding:10px; border-radius:5px;
-    margin-top:50px;
+    width:100%; padding:22px; border-radius:5px;
+    margin-top:50px; font-size:1.125rem; font-weight:500;
+    background:#222; color:#fff;
 }
+main #login-box .tab_contents #loginFrm fieldset .on {}
 /* 회원용 */
 main #login-box .tab_contents {}
 main #login-box .tab_contents #loginFrm {margin-bottom:50px;}
@@ -39,7 +41,7 @@ main #login-box .tab_contents #loginFrm fieldset .user_info >* {margin-bottom:10
 main #login-box .tab_contents #loginFrm fieldset .user_info #userId,
 main #login-box .tab_contents #loginFrm fieldset .user_info #userPw {
     width:100%;
-    padding:10px 20px; border:1px solid #aaa; border-radius:5px;
+    padding:18px 20px; border:1px solid #aaa; border-radius:5px;
 }
 main #login-box .tab_contents #loginFrm fieldset .user_info input::placeholder {color:#D3D2D2;}
 main #login-box .tab_contents #loginFrm fieldset .user_info .check {
@@ -62,7 +64,7 @@ main #login-box .tab_contents .web-join {
 }
 main #login-box .tab_contents .web-join a {
     width:calc(50% - 5px);
-    padding:10px; border:1px solid #222; margin-right:5px; border-radius:5px;
+    padding:15px; border:1px solid #222; margin-right:5px; border-radius:5px;
     display:flex; align-items:center; justify-content:center;
 }
 main #login-box .tab_contents .web-join a img {margin-right:5px;}
@@ -76,7 +78,7 @@ main #login-box .tab_contents #orderFrm .user_info >* {margin-bottom:10px;}
 main #login-box .tab_contents #orderFrm fieldset .user_info #userName,
 main #login-box .tab_contents #orderFrm fieldset .user_info #orderNum {
     width:100%;
-    padding:10px 20px; border:1px solid #aaa; border-radius:5px;
+    padding:18px 20px; border:1px solid #aaa; border-radius:5px;
 }
 main #login-box .tab_contents #orderFrm .user_info #orderBtn {}
 main #login-box .tab_contents p {

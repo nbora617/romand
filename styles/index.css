@@ -38,22 +38,19 @@ main #main_slide .txt-box > p {
     opacity: 1;
 } */
 main #main_slide .txt-box > a {
-    font-size:1.333rem; letter-spacing:-0.02rem; padding:10px 15px;
-    border:1px solid #000; border-radius:50px;
-    display:inline-block; margin-top:10px;
+    font-size:1.333rem; letter-spacing:-0.02rem; padding:10px 20px;
+    border:1px solid #000; border-radius:50px; letter-spacing:-0.02rem; margin-right:20px;
+    display:inline-block;
+    margin-top:10px;
     transform: translateY(20px);
     opacity: 1;
-    transition: 1s 0.6s;
+    transition: 1s 0.3s;
 }
 main #main_slide .swiper-wrapper .swiper-slide .txt-box a:hover {
-    background:#000; border:none;
+    background:#000; border:none; color:#fff;
 }
-main #main_slide .txt-box a:hover >* {
-    color:#fff;
-}
-main #main_slide .swiper-wrapper .swiper-slide .txt-box a span {
-    letter-spacing:-0.02rem; margin-right:20px;
-}
+main #main_slide .txt-box a:hover >* {color:#fff;}
+main #main_slide .swiper-wrapper .swiper-slide .txt-box a .fa-solid {margin-left:10px;}
 /* slide1 */
 main #main_slide .swiper-wrapper .slide1 {
     background:url(../image/bnr_bg1.jpg) no-repeat center;
@@ -204,6 +201,7 @@ main #visual .txt-box a {
     border:2px solid #fff; border-radius:50px;
     display:inline-block; margin-top:20px;
 }
+main #visual .txt-box a:hover {background:#fff; color:#000;}
 main #visual .txt-box a .fa-solid {margin-left:5px;}
 /* membership */
 main #membership {width:70%; margin:0 auto;}

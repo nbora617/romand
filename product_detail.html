@@ -51,7 +51,7 @@
                         <span>#프레쉬</span>
                         <span>#수분공급 및 보습</span>
                         <span>#산뜻</span>
-                        <span>#완벽 자외선 차단</span>
+                        <span>#자외선 차단</span>
                     </div>
                 </div>
                 <div class="info2">
@@ -83,34 +83,37 @@
                     </div>
                 </div>
                 <div class="info3">
-                    <button type="button" id="optionBtn">옵션을 선택하세요<i class="fa-solid fa-chevron-right fa-rotate-90"></i></button>
-                    <ul class="optList">
-                        <li>01 프레쉬 본품</li>
-                        <li>02 톤업 본품</li>
-                    </ul>
-                    <div class="sel_list">
-                        <p>롬앤 제로 선 클린</p>
+                    <div class="option_box">
+                    <h3>옵션</h3>
+                        <select name="optList" id="option" onchange="change()">
+                            <option value="옵션">옵션을 선택하세요.</option>  <!-- disabled: 선택 비활성화 -->
+                            <option value="01.프래쉬 본품">01.프래쉬 본품</option>
+                            <option value="02. 톤업 본품">02.톤업 본품</option>
+                        </select>
+                    </div>
+                    <div class="sellList">
+                        <input type="text" id="select" value="상품명" readonly>
                         <div class="right">
                             <p class="price">6,900 원</p>
                             <div class="count">
-                                <button type="button" id="minus"><i class="fa-solid fa-minus"></i></button>
-                                <input type="text" id="countNum">
-                                <button type="button" id="plus"><i class="fa-solid fa-plus"></i></button>
+                                <button type="button" class="countBtn minus"><i class="fa-solid fa-minus"></i></button>
+                                <input type="text" id="countNum" value="1">
+                                <button type="button" class="countBtn plus"><i class="fa-solid fa-plus"></i></button>
                             </div>
-                            <button type="button" is="close"><img src="./image/close2.png" alt=""></button>
+                            <button type="button" id="close"><!-- <img src="./image/close2.png" alt=""> --></button>
                         </div>
                     </div>
-                    <p>총<em>6,900원</em></p>
+                    <p class="total_price">총<em>6,900원</em></p>
                     <div class="all_btn">
                         <button type="button" id="shareBtn"><img src="./image/share.png" alt=""></button>
-                        <button type="button" id="like"><span class="like"></span></button>
+                        <button type="button" id="likeBtn"><span class="like"></span></button>
                         <button type="button" id="cartBtn">장바구니</button>
                         <button type="button" id="payBtn">구매하기</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="detale">
+        <section class="detail">
             <div class="tab_title">
                 <a href="#" class="active">상세정보</a>
                 <a href="#">리뷰 (200)</a>
@@ -118,12 +121,12 @@
                 <a href="#">유의사항</a>
             </div>
             <div class="contents">
-                <div class="tab_c1"><!-- 상품정보 bg --></div>
+                <div class="tab_c1"><img src="./image/info.jpg" alt=""></div>
                 <div class="tab_c2">
                     <h3>리뷰 (200)</h3>
                     <div class="review">
                         <div class="left">
-                            <p class="star"><img src="./image/popular.png" alt="">4.6</p>
+                            <p class="star"><img src="./image/star_big.png" alt="">4.6</p>
                             <p>100%의 구매자가 이 상품을 좋아합니다.</p>
                             <a href="#">상품 리뷰 작성하기</a>
                         </div>
@@ -137,7 +140,7 @@
                             <div class="rate">
                                 <p>맘에 들어요</p>
                                 <div class="graph">
-                                    <span class="rate1"></span>
+                                    <span class="rate2"></span>
                                 </div>
                             </div>
                             <div class="rate">
@@ -181,13 +184,56 @@
         const smallImg = document.querySelectorAll('.small')
         console.log(bigImg,smallImg)
         for(let i of smallImg){
-            i.addEventListener('click',function(){
+            i.addEventListener('mouseover',function(){
                 //getAttribute() - 해당 요소에 지정된 값을 가져오는 값으로 반환.
                 //setAttribute() - 선택한 요소의 속성 값을 지정.
                 smallImgAttribute = this.getAttribute('src');
                 bigImg.setAttribute('src', smallImgAttribute);
             }
         )};
+        const likeBtn = document.querySelector('.all_btn #likeBtn')
+        const like = document.querySelector('#likeBtn .like')
+        console.log(likeBtn, like)
+            likeBtn.addEventListener('click',function(e){
+                e.preventDefault();
+                like.classList.toggle('like_on');
+                window.alert('관심리스트에 담겼습니다.')
+            })
+        //상품선택하면 구매목록 창이 뜨고 선택한 상품뜨기
+        //선택목록 초기 숨기기--css
+        function change(){
+            var values = document.querySelector('#option').value;
+            document.querySelector('input').value = values;
+            sellList.style.display='flex'
+        }
+        //+-버튼에 따른 수량 변경
+        const minus = document.querySelector('.minus')
+        const plus = document.querySelector('.plus')
+        const Num = document.querySelector('input')
+        console.log(minus,plus,Num)
+        minus.addEventListener('click',function(){
+            //수량이 2이상인 경우에만 수량 줄이기
+            if(Num.value>=2){Num.value.innerHtml = Num.value--}
+        })
+        plus.addEventListener('click',function(){
+            Num.value.innerHtml = Num.value++
+        })
+        // 구매목록 닫기 클릭 시 안보이기
+        const close = document.querySelector('#close')
+        const sellList = document.querySelector('.sellList')
+        console.log(close, sellList)
+        close.addEventListener('click',function(){
+            sellList.style.display = 'none';
+        })
+        //탭 타이틀 활성화 구역 이동
+        $(".detail tab_title > a").removeClass("active");
+        // $(".detail tab_title > a").click(function(e){
+        //         e.preventDefault();
+        //         const i = $(this).index();
+        //         $(".detail tab_title a").removeClass("active");
+        //         $(".detail tab_title a").eq(i).addClass("active");
+        //         // window.scrollTo(0, $('.detail > contents div')[1].offsetTop)
+        // })
     </script>
 </body>
 </html>

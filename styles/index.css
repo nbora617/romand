@@ -99,32 +99,67 @@ main section .swiper .swiper-wrapper .swiper-slide {
     margin-right:20px; /* background:palevioletred; */
     width:(100% - 20px);
 }
-main section .swiper .swiper-wrapper .swiper-slide > a {
-    display:block; margin-bottom:15px; width:100%; height:70%; overflow:hidden;
+main section .swiper .swiper-wrapper .swiper-slide .img_link { position:relative;}
+main section .swiper .swiper-wrapper .swiper-slide .img_link a {display:block;}
+main section .swiper .swiper-wrapper .swiper-slide .img_link > a img {width:100%;}
+main section .swiper .swiper-wrapper .swiper-slide .img_link:hover .options {
+    opacity:1; transform:scaleY(1);
 }
-main section .swiper .swiper-wrapper .swiper-slide a img {}
-main section .swiper .swiper-wrapper .swiper-slide .contents {text-align:left;}
-main section .swiper .swiper-wrapper .swiper-slide .contents >* {margin-bottom:10px;}
-main section .swiper .swiper-wrapper .swiper-slide .contents h1 {}
-main section .swiper .swiper-wrapper .swiper-slide .contents h1 a {
-    font-size:1.25rem; letter-spacing:-0.02rem; font-weight:500;
+main section .swiper .swiper-wrapper .swiper-slide .img_link .options {
+    position:absolute; bottom:0;
+    display:flex; flex-flow:row nowrap;
+    width:100%; background:rgba(250, 205, 210, 0.6);
+    opacity:0; transform-origin:bottom; transform:scaleY(0); 
+    transition:all 0.5s;
 }
-main section .swiper .swiper-wrapper .swiper-slide .contents .price >* {margin-right:10px;}
+main section .swiper .swiper-wrapper .swiper-slide .img_link .options > a {
+    display:block; width:calc(33.33%); padding:10px;
+    text-align:center;
+}
+main section .swiper .swiper-wrapper .swiper-slide .img_link .options > a:nth-child(2){
+    border:1px solid #aaa; border-top:0; border-bottom:0;
+}
+main section .swiper .swiper-wrapper .swiper-slide .img_link .options > a > img {}
+main section .swiper .swiper-wrapper .swiper-slide .img_link .options > a > span {
+    background:url(../image/like.png) no-repeat center;
+    width:25px; height:25px; display:inline-block;
+    padding:15px;
+}
+/* 관심달기 on/off 호출 클래스 */
+.like_on {background-image:url(../image/like_on.png) !important;}
+main section .swiper .swiper-wrapper .swiper-slide .contents {}
+main section .swiper .swiper-wrapper .swiper-slide .contents >* {margin-bottom:13px;}
+main section .swiper .swiper-wrapper .swiper-slide .contents h2 {}
+main section .swiper .swiper-wrapper .swiper-slide .contents h2 a {
+    font-size:1.125rem; font-weight:700; letter-spacing:-0.02rem;
+}
+main section .swiper .swiper-wrapper .swiper-slide .contents .price {}
+main section .swiper .swiper-wrapper .swiper-slide .contents .price >* {margin-right:15px;}
 main section .swiper .swiper-wrapper .swiper-slide .contents .price em {
-    font-size:1.25rem; letter-spacing:-0.02rem; font-weight:500;
+    font-size:1.125rem; font-weight:700; letter-spacing:-0.02rem;
 }
 main section .swiper .swiper-wrapper .swiper-slide .contents .price del {
-    text-decoration:line-through; color:#999;
+    text-decoration:line-through; letter-spacing:-0.02rem;
 }
-main section .swiper .swiper-wrapper .swiper-slide .contents .price span {
-    font-size:1.125rem; letter-spacing:-0.02rem; font-weight:500; color:#CD3142
+main section .swiper .swiper-wrapper .swiper-slide .contents .price .sale {
+    font-size:1.125rem; letter-spacing:-0.02rem; color:#D62136;
+    margin-right:0;
 }
-main section .swiper .swiper-wrapper .swiper-slide .contents p {}
-main section .swiper .swiper-wrapper .swiper-slide .contents p img {}
-main section .swiper .swiper-wrapper .swiper-slide .contents .ect {margin-top:15px;}
-main section .swiper .swiper-wrapper .swiper-slide .contents .ect >* {
-    padding:5px; border:1px solid #000; 
-    font-size:0.75rem; letter-spacing:-0.02rem;
+main section .swiper .swiper-wrapper .swiper-slide .contents .popular {}
+main section .swiper .swiper-wrapper .swiper-slide .contents .popular img {}
+main section .swiper .swiper-wrapper .swiper-slide .contents .popular span {
+    color:#555555; letter-spacing:-0.02rem;
+}
+main section .swiper .swiper-wrapper .swiper-slide .contents .ect {}
+main section .swiper .swiper-wrapper .swiper-slide .contents .ect span {
+    padding:5px 10px; border:1px solid #222;
+    display:inline-block; font-size:0.875rem;
+}
+main section .swiper .swiper-wrapper .swiper-slide .contents .ect .hit {
+    
+}
+main section .swiper .swiper-wrapper .swiper-slide .contents .ect .new {
+    color:#D62136; border-color:#D62136;
 }
 /* 슬라이드 페이지네이션 */
 main section .swiper .swiper-pagination {bottom:0;}

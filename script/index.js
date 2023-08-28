@@ -54,6 +54,8 @@ const best_swiper = new Swiper('#best_slide', {
     loop:true,
     speed:800,
     slidesPerView:1,
+    centeredSlides:true, //슬라이드 기준이 중심부터 시작설정
+    spaceBetween:20,
     // 페이지네이션
     pagination: {
         el: '.swiper-pagination',
@@ -71,11 +73,23 @@ const best_swiper = new Swiper('#best_slide', {
         1400:{slidesPerView:4, centeredSlides:true,}
     }
 })
-// 베스트셀러 슬라이드
+// 상품 관심달기 on/off
+const like = document.querySelectorAll('.options > a > span')
+console.log(like)
+for(let i of like){
+    i.addEventListener('click',function(e){
+        e.preventDefault();
+        i.classList.toggle('like_on');
+        window.alert('관심리스트에 담겼습니다.')
+    })
+}
+// 신상품 슬라이드
 const new_swiper = new Swiper('#new_slide', {
     loop:true,
     speed:800,
     slidesPerView:1,
+    centeredSlides:true, //슬라이드 기준이 중심부터 시작설정
+    spaceBetween:20,
     // 페이지네이션
     pagination: {
         el: '.swiper-pagination',
@@ -100,14 +114,4 @@ const bnr_swiper = new Swiper('#bnr_slide', {
     autoplay:{delay:3000}, //자동재생
     speed:800,
 })
-//이벤트 슬라이드 
-const event_swiper = new Swiper('#event_slide', {
-    loop:true,
-    speed:800,
-    slidesPerView:1,
-    //반응형 페이지 수
-    breakpoints:{
-        600:{slidesPerView:2, centeredSlides:true,},
-        1000:{slidesPerView:3, centeredSlides:true,},
-    }
-})
+

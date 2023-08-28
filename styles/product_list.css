@@ -31,7 +31,7 @@ main .desc .align .align_list a {padding:10px; margin-right:10px;}
 main .desc .align .align_list .active {font-weight:700;}
 main .desc .align #alignBtn {background:none;}
 main .desc .align #alignBtn span {background:url(../image/align_1.png) no-repeat; width:30px; height:30px; display:block;}
-.align_off {background:url(../image/align.png) no-repeat !important;}
+main .desc .align #alignBtn .align_off {background:url(../image/align.png) no-repeat;}
 /* 상품리스트 */
 main .product_list {
     width:80%; margin:0 auto; padding:50px 0;
@@ -68,9 +68,10 @@ main .product_list .item_box .img_link .options > a > img {}
 main .product_list .item_box .img_link .options > a > span {
     background:url(../image/like.png) no-repeat center;
     width:25px; height:25px; display:inline-block;
+    padding:15px;
 }
 /* 관심달기 on/off 호출 클래스 */
-.like_on {background:url(../image/like_on.png) no-repeat !important;}
+.like_on {background-image:url(../image/like_on.png) !important;}
 main .product_list .item_box .contents {}
 main .product_list .item_box .contents >* {margin-bottom:13px;}
 main .product_list .item_box .contents h2 {}

@@ -13,7 +13,7 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 
 /* header */
 header {
-    width:100%; background:rgb(255, 255, 255, 0.7);
+    width:100%; background:rgb(255, 255, 255, 0.8);
     position:fixed; left:0; top:0; z-index:999;
 }
 header .head_bg {
@@ -141,12 +141,12 @@ footer {
     z-index:-5; */
 }
 footer .f_top {
-    display:flex; flex-flow:row nowrap; justify-content:space-between; 
+    display:flex; flex-flow:row wrap; justify-content:space-between; align-items:center;
     padding:10px 0;
     border:1px solid #aaa; border-left:none; border-right:none;
 }
 footer .f_top .left {display:flex; flex-flow:row nowrap;}
-footer .f_top .left a {padding:5px;}
+footer .f_top .left a {padding:5px; letter-spacing:-0.04rem;}
 footer .f_top .left a::after {
     content:''; display:inline-block; width:1px; height:11px;
     background-color:#555; margin:0 5px 0 20px;
@@ -159,7 +159,7 @@ footer .f_top .right a {
 footer .f_top .right a:last-child {margin-right:0;}
 footer .f_top .right a img {width:100%;}
 footer .f_btm {
-    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+    display:flex; flex-flow:row wrap; justify-content:space-between; align-items:center;
     padding:10px 0;
 }
 footer .f_btm .left {width:70%;}

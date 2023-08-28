@@ -61,10 +61,8 @@ main #main_slide .swiper-wrapper .slide2 {
     background:url(../image/bnr_bg6.jpg) no-repeat center;
     background-size:cover;
 }
-main #main_slide .slide2 .txt-box p {width:40%;}
-main #main_slide .slide2 .txt-box h2 img {width:50%;}
+main #main_slide .swiper-wrapper .slide2 h2 img {width:30%;}
 /* slide3 */
-main #main_slide .swiper-wrapper .slide2 h2 img {width:50%; margin-top:15px;}
 main #main_slide .swiper-wrapper .slide3 {
     background:url(../image/main_bnr1_1920px.jpg) no-repeat center;
     background-size:cover;
@@ -93,10 +91,10 @@ main section {
 main section h2 {
     font-size:2.369rem; font-weight:700; letter-spacing:-0.02rem; margin-bottom:30px;
 }
-main section .swiper {max-width:70%; height:600px; margin:0 auto;}
+main section .swiper {max-width:70%; height:500px; margin:0 auto;}
 main section .swiper .swiper-wrapper {}
 main section .swiper .swiper-wrapper .swiper-slide {
-    margin-right:20px; /* background:palevioletred; */
+    /* margin-right:20px; */ /* background:palevioletred; */
     width:(100% - 20px);
 }
 main section .swiper .swiper-wrapper .swiper-slide .img_link { position:relative;}
@@ -162,7 +160,7 @@ main section .swiper .swiper-wrapper .swiper-slide .contents .ect .new {
     color:#D62136; border-color:#D62136;
 }
 /* 슬라이드 페이지네이션 */
-main section .swiper .swiper-pagination {bottom:0;}
+main section .swiper .swiper-pagination {bottom:20px;}
 main section .swiper .swiper-pagination-bullet {
     /* pagination은 기본이 파란색 bullet */
     background-color:black;
@@ -203,6 +201,7 @@ main #bnr_slide .swiper-wrapper {}
 main #bnr_slide .swiper-wrapper .swiper-slide {
     background:url(../image/adv_bnr.jpg) no-repeat center;
     background-size:cover;
+    max-width:100%; margin:0 auto;
 }
 main #bnr_slide .swiper-wrapper .slide1 {}
 main #bnr_slide .swiper-wrapper .slide2 {}
@@ -221,7 +220,7 @@ main #visual video {
 }
 main #visual .txt-box {
     width:100%; text-align:center;
-    position:absolute; top:70%; z-index:500;
+    position:absolute; top:50%; z-index:500;
 }
 main #visual .txt-box h1 {
     font-size:3.157rem; font-weight:700; letter-spacing:-0.02em;
@@ -241,24 +240,26 @@ main #visual .txt-box a .fa-solid {margin-left:5px;}
 /* membership */
 main #membership {width:70%; margin:0 auto;}
 main #membership .title {
-    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    display:flex; flex-flow:row wrap; justify-content:space-between; align-items:center;
     margin-bottom:50px;
 }
 main #membership .title .left {text-align:left;}
 main #membership .title .left h2 {font-size:1.777rem; margin-bottom:20px;}
-main #membership .title .left p {}
+main #membership .title .left p {letter-spacing:-0.02rem;}
 main #membership .title .link {
     padding:10px; font-weight:500; align-self:flex-end;
 }
 main #membership .title .link .fa-solid {margin-left:5px;}
 main #membership .box {
-    display:flex; flex-flow:row nowrap;  justify-content:space-between;
-    padding:0 50px;
+    width:100%;
+    display:flex; flex-flow:row nowrap;  justify-content:space-around;
+    /* padding:0 50px; */
 }
 main #membership .box .contents {
     display:flex; flex-flow:column nowrap;
-    width:calc(25% - 70px); margin-right:70px;
+    width:calc(20% - 60px); margin-right:60px;
 }
+main #membership .box .contents:last-child {margin-right:0;}
 main #membership .box .contents img {}
 main #membership .box .contents em {
     letter-spacing:-0.02rem; font-weight:700; margin:15px 0 7px 0; 

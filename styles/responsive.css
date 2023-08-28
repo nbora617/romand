@@ -1,6 +1,5 @@
 @media screen and (max-width:1440px){
     /* header */
-    
     header nav > ul > li {margin-right:10px;}
     header nav > ul > li:last-child {margin-right:0;}
     /* main */
@@ -20,8 +19,23 @@
     /* main-slide */
     main #main_slide .swiper-wrapper .swiper-slide {
         background-image:url(../image/main_bnr1_1200px.jpg);}
+    /* main -visual */
+    main #visual {/* height:500px; */ width:calc(100% - 60px); margin:0 auto;}
+    main #visual .txt-box h1 {font-size:2rem;}
+    main #visual .txt-box p {font-size:1.777rem; line-height:25px;}
+    main #visual .txt-box a {font-size:1.333rem;}
+    /* footer */
+    footer .f_top .left a, footer .f_btm .left address, 
+    footer .f_btm .left p, footer .f_btm .right p  {font-size:0.875rem;}
+    footer .f_btm .left {width:60%;}
+    /* 상품 상세페이지 */
+    /* 2. 리뷰 */
+    main .detail .contents .tab_c2 .review .right .rate p {
+        font-size:0.75rem; letter-spacing:-0.04rem;
+    }
+    
 }
-@media screen and (max-width:900px){
+@media screen and (max-width:950px){
     /* header */
     header nav {display:none;}
     header .gnb .user, header .gnb .cart  {display:none;}
@@ -38,19 +52,118 @@
     }
     main #main_slide .txt-box > h2 {font-size:1.333rem; line-height:40px;}
     main #main_slide .txt-box > p {font-size:0.875rem;; line-height:25px; margin-top:80px;}
-    main #main_slide .txt-box > a  {padding:5px; margin-top:10px;}
+    main #main_slide .txt-box > a  {font-size:0.875rem; padding:5px; margin-top:10px;}
     main #main_slide .txt-box > a span {font-size:0.75rem;}
     main #main_slide .txt-box > a .fa-solid {font-size:0.75rem;}
     /* 상품리스트 영역 */
     /* main section* {width:90%; height:150px;} */
-    main section h2 {font-size:1.777rem; margin-top:10px;}
+    main section h2 {font-size:1.5rem; margin-top:10px;}
+    main section .swiper .swiper-wrapper .swiper-slide .contents >* {margin-bottom:8px;}
+    main section .swiper .swiper-wrapper .swiper-slide .contents h2 a,
+    main section .swiper .swiper-wrapper .swiper-slide .contents .price em,
+    main section .swiper .swiper-wrapper .swiper-slide .contents .price .sale {font-size:1rem;}
+    main section .swiper .swiper-wrapper .swiper-slide .contents .price del,
+    main section .swiper .swiper-wrapper .swiper-slide .contents .popular span {font-size:.875rem;}
+    main section .swiper .swiper-wrapper .swiper-slide .contents .ect span {font-size:0.75rem;}
     /* main -visual */
-    /* 화면의 크기비율만 줄이는 방법으로 수정해야함!! */
     main #visual {height:500px; width:calc(100% - 60px); margin:0 auto;}
-    main #visual .txt-box h1 {font-size:2.369rem;}
-    main #visual .txt-box p {font-size:1.777rem; line-height:25px;}
-    main #visual .txt-box a {font-size:1rem;}
+    main #visual .txt-box h1 {font-size:1.777rem;}
+    main #visual .txt-box p {font-size:1.333rem; line-height:25px;}
+    main #visual .txt-box a {font-size:0.875rem;}
+    /* membership */
+    main #membership{width:80%}
+    main #membership .title .left h2 {font-size:1.5rem; margin-bottom:15px;}
+    main #membership .title .left p {width:85%; font-size:0.875rem; line-height:20px;}
+    main #membership .title .link {font-size:0.75rem;}
+    main #membership .title .link .fa-solid {font-size:0.75rem; margin-left:2px;}
+    main #membership .box {justify-content:space-around;}
+    main #membership .box .contents {
+        width:calc(20% - 30px); margin-right:30px;
+    }
+    main #membership .box .contents:last-child {margin-right:0;}
+    main #membership .box .contents em,
+    main #membership .box .contents span {font-size:0.75rem;}
+    /* footer */
+    footer .f_top .left a, footer .f_btm .left address, 
+    footer .f_btm .left p, footer .f_btm .right p  {font-size:0.75rem; /* padding:0px; */}
+    footer .f_top .left a::after {height:7px; margin:0 5px 0 13px;}
+    footer .f_top .right a {width:25px; height:25px;}
+    footer h1 a img {width:90%;}
+    /* footer .f_btm .left {width:60%;} */
+    footer .f_btm .right {padding:10px;}
+    footer .f_btm .right > * {margin-bottom:5px;}
+    footer .f_btm .right .tel {font-size:1rem;}
+    footer .f_btm .right a:nth-child(4) {font-size:0.875rem;}
+    /* 상품리스트 */
+    main .product_list .item_box {
+        width:calc(33.33% - 20px);
+        margin-right:20px;
+    }
+    /* product_detail */
+    main .breadcrumbs a,main .breadcrumbs a i {font-size:0.875rem;}
+    /* 탭메뉴 */
+    main .detail .tab_title a {font-size:1rem;}
+    /* 탭내용 */
+    main .detail .contents > div h3 {font-size:1.125rem; padding:20px 10px;}
+    /* 2. 리뷰 */
+    main .detail .contents .tab_c2 .review .left >* {margin-bottom:10px;}
+    main .detail .contents .tab_c2 .review .left .star {font-size:1.777rem;}
+    main .detail .contents .tab_c2 .review .left .star img {width:25px;}
+    main .detail .contents .tab_c2 .review .left p,
+    main .detail .contents .tab_c2 .review .right .rate p {font-size:0.75rem;}
+    main .detail .contents .tab_c2 .review .left a {font-size:0.875rem;}
+    main .detail .contents .tab_c2 .review .right {display:block;}
+    main .detail .contents .tab_c2 .review .right {width:100%;}
+    main .detail .contents .tab_c2 .review .right .rate {width:100%;}
+    main .detail .contents .tab_c3 a {font-size:1rem; padding:15px 40px;}
 
-
-
+}
+@media screen and (max-width:650px){
+    /* 상품 슬라이드 */
+    main section {padding:30px 0;}
+    /* main section .swiper {height:450px;} */
+    /* main section .swiper .swiper-wrapper .swiper-slide {width:50%;} */
+    main section .swiper {max-width:50%; height:400px;}
+    main* {margin-bottom:50px;}
+     /* main -visual */
+    main #visual {max-height:400px;}
+    main #visual video {height:100%;}
+    main #visual .txt-box h1 {font-size:1.333rem;}
+    main #visual .txt-box p {font-size:1.125rem; line-height:5px;}
+    main #visual .txt-box a {font-size:0.75rem; padding:5px 10px;}
+    /* membership */
+    main #membership {width:calc(100% - 60px);}
+    main #membership .title {margin-bottom:30px;}
+    main #membership .title .left h2 {font-size:1.333rem;} 
+    main #membership .title .left {width:80%;}
+    main #membership .box .contents {width:calc(20% - 20px); margin-right:20px;}
+    main #membership .box .contents em, main #membership .box .contents span {font-size:0.5rem;}
+    /* footer */
+    footer .f_top .left a, .f_top .left a:nth-child(3)::after {display:none;}
+    footer .f_top .left a:nth-child(1), footer .f_top .left a:nth-child(2), .f_top .left a:nth-child(3) {
+        display:inline-block; 
+    }
+    footer .f_btm .left {width:100%;}
+    /* 상품리스트 */
+    main .product_list .item_box {width:calc(50% - 20px);}
+    /* product_detail */
+    main .breadcrumbs a,main .breadcrumbs a i {font-size:0.75rem;}
+    /* 상품 상세페이지 */
+    main .item_info .right .info1 {padding:15px 0;}
+    main .item_info .right .info1 >* {margin-bottom:13px;}
+    main .item_info .right .info1 h1 a {font-size:0.875rem;}
+    main .item_info .right .info1 h1 a i {font-size:0.75rem;}
+    main .item_info .right .info1 h2 {font-size:1.125rem;}
+    main .item_info .right .info1 p,
+    main .item_info .right .info1 .tag span {font-size:0.75rem;}
+    main .item_info .right .info2 > div h3 {font-size:1rem;}
+    main .item_info .right .info2 .price_box .price_all .discount,
+    main .item_info .right .info2 .price_box .price_all .sale {font-size: 1.125rem;}
+    main .item_info .right .info2 .price_box .price_all .cost {font-size:0.875rem;}
+    main .item_info .right .info2 .delivery .d_desc p, 
+    main .item_info .right .info2 .delivery .d_desc p span {font-size:0.875rem;}
+    main .item_info .right .info3 .total_price em {font-size:1.5rem;}
+    main .item_info .right .info3 .all_btn #cartBtn,
+    main .item_info .right .info3 .all_btn #payBtn {width:190px;}
+    main .item_info .right .info3 #option option {font-size:0.875rem;}
 }

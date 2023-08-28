@@ -68,7 +68,7 @@ const best_swiper = new Swiper('#best_slide', {
     },
     //반응형 페이지 수
     breakpoints:{
-        600:{slidesPerView:2, centeredSlides:true,},
+        500:{slidesPerView:2, centeredSlides:true,},
         1000:{slidesPerView:3, centeredSlides:true,},
         1400:{slidesPerView:4, centeredSlides:true,}
     }
@@ -102,7 +102,7 @@ const new_swiper = new Swiper('#new_slide', {
     },
     //반응형 페이지 수
     breakpoints:{
-        600:{slidesPerView:2, centeredSlides:true,},
+        500:{slidesPerView:2, centeredSlides:true,},
         1000:{slidesPerView:3, centeredSlides:true,},
         1400:{slidesPerView:4, centeredSlides:true,}
     }

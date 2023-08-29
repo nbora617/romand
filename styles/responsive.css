@@ -7,6 +7,8 @@
     main #main_slide .swiper-wrapper .slide3 {
         background-image:url(../image/main_bnr1_1440px.jpg);}
     /* main .visual video {width:auto; height:100%;} */
+    /* 상품 상세페이지 */
+    main .detail .contents >* {padding:0 70px;}
 }
 @media screen and (max-width:1200px){
     /* header */
@@ -32,6 +34,7 @@
     footer .f_btm .left p, footer .f_btm .right p  {font-size:0.875rem;}
     footer .f_btm .left {width:60%;}
     /* 상품 상세페이지 */
+    main .detail .contents >* {padding:0 70px;}
     /* 2. 리뷰 */
     main .detail .contents .tab_c2 .review .right .rate p {
         font-size:0.75rem; letter-spacing:-0.04rem;
@@ -128,6 +131,7 @@
     main .detail .contents .tab_c2 .review .right {width:100%;}
     main .detail .contents .tab_c2 .review .right .rate {width:100%;}
     main .detail .contents .tab_c3 a {font-size:1rem; padding:15px 40px;}
+    main .detail .contents .tab_c2 .review iframe {margin-bottom:100px;}
 
 }
 @media screen and (max-width:650px){
@@ -186,4 +190,6 @@
     main .item_info .right .info3 #option option {font-size:0.875rem;}
     main .detail .tab_title {white-space:nowrap;}
     main .detail .contents .tab_c3 a {font-size:0.875rem;}
+    main .detail .contents .tab_c4 .notice table tr >* {font-size:0.875rem;}
 }
+    

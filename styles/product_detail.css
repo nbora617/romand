@@ -1,9 +1,9 @@
-main {width:(100% -60px); min-width:450px; margin:0 auto; padding:50px;}
+main {width:(100% -60px); min-width:450px; margin:0 auto; padding:70px 0;}
 main >* {margin-bottom:70px;}
 /* 사이트 경로 */
 main .breadcrumbs {
     display:flex; flex-flow:row wrap; align-items:center; justify-content:flex-start;
-    padding:10px 0; margin-bottom:0;
+    padding:10px 30px; margin-bottom:0;
 }
 main .breadcrumbs a {padding:10px; margin-right:10px;}
 main .breadcrumbs a i {margin-left:5px;}
@@ -209,10 +209,13 @@ main .detail .tab_title .active {
     color:#222; border-bottom:3px solid #222; 
     font-weight:700;
 }
-main .detail .contents { padding:70px 0;}
-main .detail .contents >* {margin-bottom:100px; text-align:center; height:100vh;}
+main .detail .contents {padding:70px 0;}
+main .detail .contents >* {
+    margin-bottom:100px; text-align:center; height:100vh; 
+    max-width:1300px; margin:0 auto;overflow:hidden;
+}
 /* 상품설명 */
-main .detail .contents .tab_c1 {}
+main .detail .contents .tab_c1 {margin-bottom:50px;;}
 main .detail .contents .tab_c1 img {max-width:80%; max-height:100vh;}
 /* 공통디자인 */
 main .detail .contents > div h3 {
@@ -264,14 +267,37 @@ main .detail .contents .tab_c2 .review .right .rate .graph .rate2 {width:60%;}
 main .detail .contents .tab_c2 .review .right .rate .graph .rate3 {width:40%;}
 main .detail .contents .tab_c2 .review .right .rate .graph .rate4,
 main .detail .contents .tab_c2 .review .right .rate .graph .rate5 {width:0;}
-/* 문의 */
-main .detail .contents .tab_c3 {
-    display:flex; align-items:center; justify-content:space-between; align-items:flex-end;
+/* 그누보드 */
+iframe {
+    width:80%; height:500px; margin-top:50px; 
 }
-main .detail .contents .tab_c3 h3 {/* border:none; */}
-main .detail .contents .tab_c3 a {
+/* 문의 */
+main .detail .contents .tab_c3 {}
+main .detail .contents .tab_c3 .top {
+    display:flex; align-items:center; justify-content:space-between; align-items:flex-start;
+}
+main .detail .contents .tab_c3 .top h3 {/* border:none; */}
+main .detail .contents .tab_c3 .top a {
     font-size:1.125rem; padding:10px; background:#222; color:#fff;
     display:inline-block; width:150px;
 }
+main .detail .contents .tab_c3 iframe {width:80%; height:750px; margin-top:50px;}
 /* 유의사항 */
-main .detail .contents .tab_c4 h3 {}
+main .detail .contents .tab_c4 h3 {margin-bottom:30px;}
+main .detail .contents .tab_c4 .notice {
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+main .detail .contents .tab_c4 .notice h4 {
+    font-size:1.125rem; font-weight:500; margin-bottom:25px;
+    padding-left:120px; align-self:flex-start;
+}
+main .detail .contents .tab_c4 .notice table {width:80%; margin:0 auto;} 
+main .detail .contents .tab_c4 .notice table tr {
+    display:flex; flex-flow:row nowrap; align-items:center;
+    padding:20px 10px; border-bottom:1px solid #aaa; 
+}
+main .detail .contents .tab_c4 .notice table tr:first-child {border-top:2px solid #aaa; }
+main .detail .contents .tab_c4 .notice table tr:last-child {border-bottom:2px solid #aaa; }
+main .detail .contents .tab_c4 .notice table th {width:40%; margin-right:30px;}
+main .detail .contents .tab_c4 .notice table td {width:70%; text-align:left;}
+main .detail .contents .tab_c4 .notice table td:last-child {line-height:25px;}

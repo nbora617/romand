@@ -24,6 +24,9 @@
     main #visual .txt-box h1 {font-size:2rem;}
     main #visual .txt-box p {font-size:1.777rem; line-height:25px;}
     main #visual .txt-box a {font-size:1.333rem;}
+    /* 하단 광고 슬라이드 */
+    main #bnr_slide .swiper-wrapper .swiper-slide h2 {font-size: 2rem;}
+    main #bnr_slide .swiper-wrapper .swiper-slide p {font-size: 1.333rem;}
     /* footer */
     footer .f_top .left a, footer .f_btm .left address, 
     footer .f_btm .left p, footer .f_btm .right p  {font-size:0.875rem;}
@@ -40,6 +43,12 @@
     header nav {display:none;}
     header .gnb .user, header .gnb .cart  {display:none;}
     header .gnb .searchGnb img {width:100%;}
+    /* search open */
+    header .open_search {top:50px;}
+    header .open_search #searchFrm fieldset .user_text #search::placeholder,
+    header .open_search #searchFrm fieldset #searchBtn,
+    header .open_search .keyword h3 {font-size:0.875rem;}
+    header .open_search  .keyword .right a {font-size:0.75rem;}
     /* m_menu */
     header .head_bg #all_m_menu {display:block;}
     /* 매인 슬라이드 */
@@ -65,6 +74,9 @@
     main section .swiper .swiper-wrapper .swiper-slide .contents .price del,
     main section .swiper .swiper-wrapper .swiper-slide .contents .popular span {font-size:.875rem;}
     main section .swiper .swiper-wrapper .swiper-slide .contents .ect span {font-size:0.75rem;}
+     /* 하단 광고 슬라이드 */
+    main #bnr_slide .swiper-wrapper .swiper-slide h2 {font-size:1.777rem;}
+    main #bnr_slide .swiper-wrapper .swiper-slide p {font-size: 1rem;}
     /* main -visual */
     main #visual {height:500px; width:calc(100% - 60px); margin:0 auto;}
     main #visual .txt-box h1 {font-size:1.777rem;}
@@ -119,6 +131,7 @@
 
 }
 @media screen and (max-width:650px){
+    main {width:calc(100% -60px); margin:0 auto;}
     /* 상품 슬라이드 */
     main section {padding:30px 0;}
     /* main section .swiper {height:450px;} */
@@ -131,6 +144,10 @@
     main #visual .txt-box h1 {font-size:1.333rem;}
     main #visual .txt-box p {font-size:1.125rem; line-height:5px;}
     main #visual .txt-box a {font-size:0.75rem; padding:5px 10px;}
+    /* 하단 광고 슬라이드 */
+    main #bnr_slide .swiper-wrapper .swiper-slide .txt {top:40%;}
+    main #bnr_slide .swiper-wrapper .swiper-slide h2 {font-size:1.333rem; line-height:50px;}
+    main #bnr_slide .swiper-wrapper .swiper-slide p {font-size:0.875rem;}
     /* membership */
     main #membership {width:calc(100% - 60px);}
     main #membership .title {margin-bottom:30px;}
@@ -162,8 +179,11 @@
     main .item_info .right .info2 .price_box .price_all .cost {font-size:0.875rem;}
     main .item_info .right .info2 .delivery .d_desc p, 
     main .item_info .right .info2 .delivery .d_desc p span {font-size:0.875rem;}
+    main .item_info .right .info2 .delivery .d_desc .guide {left:20%;}
     main .item_info .right .info3 .total_price em {font-size:1.5rem;}
     main .item_info .right .info3 .all_btn #cartBtn,
     main .item_info .right .info3 .all_btn #payBtn {width:190px;}
     main .item_info .right .info3 #option option {font-size:0.875rem;}
+    main .detail .tab_title {white-space:nowrap;}
+    main .detail .contents .tab_c3 a {font-size:0.875rem;}
 }

@@ -19,9 +19,8 @@
     <link rel="stylesheet" href="./styles/product_detail.css ">
     <link rel="stylesheet" href="./styles/responsive.css">
 </head>
-</head>
 <body>
-    <!-- header.php -->
+    <!-- <?php include('./header.php') ?> -->
     <main>
         <div class="breadcrumbs">
             <a href="index.html">홈 <i class="fa-solid fa-angle-right"></i></a>
@@ -174,7 +173,8 @@
             </div>
         </section>
     </main>
-    <!-- footer.php -->
+    <!-- <?php include('./footer.php') ?> -->
+
     <!-- 외부스크립트 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./script/common.js"></script>
@@ -226,14 +226,29 @@
             sellList.style.display = 'none';
         })
         //탭 타이틀 활성화 구역 이동
-        $(".detail tab_title > a").removeClass("active");
-        // $(".detail tab_title > a").click(function(e){
+        $('section.detail div.tab_title a').removeClass("active");
+        $('section.detail div.tab_title a').click(function(e){
+                e.preventDefault();
+                const i = $(this).index();
+                $('section.detail div.tab_title a').removeClass("active");
+                $('section.detail div.tab_title a').eq(i).addClass("active");
+                window.scrollTo(0, $('div.contents > div')[i].offsetTop)
+        })
+        // const tab = document.querySelectorAll('section.detail div.tab_title a')
+        // const content = document.querySelectorAll('div.contents > div')
+        // console.log(tab,content)
+        
+        // for(i=4; i<8; i++){
+        //     console.log(tab[i])
+        //     // tab[i].classList.remove('active');
+        //     tab[i].addEventListener('click',function(e){
         //         e.preventDefault();
-        //         const i = $(this).index();
-        //         $(".detail tab_title a").removeClass("active");
-        //         $(".detail tab_title a").eq(i).addClass("active");
-        //         // window.scrollTo(0, $('.detail > contents div')[1].offsetTop)
-        // })
+        //         this.classList.add('active')
+        //         // content[i].window.scrollTo(0, $('.detail > contents div')[1].offsetTop)
+        //         this.previousElementSibling.classList.remove('active');
+        //         this.nextElementSibling.classList.remove('active');
+        //     })
+        // }
     </script>
 </body>
 </html>

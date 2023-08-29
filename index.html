@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <title>롬앤</title>
     <!-- swiper -->
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
+    <!-- <?php include('./header.php') ?> -->
     <header>
         <div class="head_bg">
             <h1><a href=""><img src="./image/logo.png" alt="롬앤"></a></h1>
@@ -83,6 +84,30 @@
                     <span></span>
                 </div> 
             </div>
+        </div>
+        <!-- open search -->
+        <div class="open_search">
+            <form action="#" id="searchFrm" method="get">
+                <fieldset>
+                    <legend class="skip">검색</legend>
+                    <div class="user_text">
+                        <img src="./image/search.png" alt="">
+                        <input type="text" id="search" placeholder="검색어를 입력해주세요">
+                        <button type="reset" id="search_close"><img src="./image/close2.png" alt=""></button>
+                    </div>
+                    <button type="button" id="searchBtn">검색</button>
+                </fieldset>
+                <div class="keyword">
+                    <h3>추천 검색어</h3>
+                    <div class="right">
+                        <a href="#">#듀이풀 워터틴트</a>
+                        <a href="#">#블룸 인 커버핏 쿠션</a>
+                        <a href="#">#백미 톤업 크림</a>
+                        <a href="#">#트윙크 팬 라이너</a>
+                        <a href="#">#한올 쉐이드 라이너</a>
+                    </div>
+                </div>
+            </form>
         </div>
         <!-- open_m_menu -->
         <div class="open_m_menu">
@@ -157,7 +182,7 @@
                     <div class="txt-box">
                         <h2>코덕이 상상하던 새로운 공간<br><img src="./image/Coha_logo_dark.png" alt=""></h2>
                         <p>단종템, 인기 굿즈, 베스트 제품까지<br>살 수 있는 코하 달란트 시장에 오세요!</p>
-                        <a href="#">자세히 보기</span><i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#"><span>자세히 보기</span><i class="fa-solid fa-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="swiper-slide slide3">
@@ -668,19 +693,35 @@
                 <div class="swiper-button-next"></div>
             </div>
         </section>
+        <!-- 하단 광고 영역 -->
         <div class="swiper" id="bnr_slide">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide1"></div>
-                <div class="swiper-slide slide2"></div>
-                <div class="swiper-slide slide3"></div>
+                <div class="swiper-slide slide1">
+                    <div class="txt">
+                        <h2>서울사는 룸메이트</h2>
+                        <p>오늘 주문하면 오늘 만나볼 수 있어요!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide2">
+                    <div class="txt">
+                        <h2>서울사는 룸메이트</h2>
+                        <p>오늘 주문하면 오늘 만나볼 수 있어요!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide3">
+                    <div class="txt">
+                        <h2>서울사는 룸메이트</h2>
+                        <p>오늘 주문하면 오늘 만나볼 수 있어요!</p>
+                    </div>
+                </div>
             </div>
         </div>
         <section id="visual">
-            <video src="./image/VIDEO _1080p.mp4" autoplay muted loop></video>
+            <video src="./image/video_1080p.mp4" autoplay muted loop></video>
             <div class="txt-box">
                 <h1>[ NEW 트윙클 펜 라이너 OPEN ]</h1>
                 <P>눈가에 촉촉히 맺히는 #물빛글리터</P>
-                <a href="#">제품 보러가기 <i class="fa-solid fa-angle-right"></i></a></a>
+                <a href="#">제품 보러가기 <i class="fa-solid fa-angle-right"></i></a>
             </div>
         </section>
         <!-- membership -->
@@ -746,7 +787,7 @@
                     (주)아이패밀리SC<br>
                     서울특별시 송파구 동남로 122(문정동) COLLECTED 빌딩 Tel : 02.1670.2238 Fax : 02.6910.4111 사업자등록번호 : 120-86-00633통신판매신고번호 : 제2022-서울송파-1690호 대표자 : 김태욱,김성현
                 </address>
-                <p>&copy 2017 IFAMILY SC, CO.,LTD.All Right Reserved.</p>
+                <p>&copy; 2017 IFAMILY SC, CO.,LTD.All Right Reserved.</p>
             </div>
             <div class="right">
                 <p>롬앤 고객센터 이용안내</p>
@@ -757,7 +798,7 @@
             </div>
         </div>
     </footer>
-
+    <!-- <?php include('./footer.php') ?> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./script/common.js"></script>
     <script src="./script/index.js"></script>

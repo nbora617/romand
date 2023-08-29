@@ -8,7 +8,6 @@ main #main_slide .swiper-wrapper .swiper-slide {}
 /* 슬라이드 txt영역 */
 main #main_slide .txt-box {
     position: absolute; left:50%; top:65%;
-    box-sizing: border-box;
     width: 90%; padding: 0 2.0rem;
     /* 초기 숨기기 ==자바스크립트/제이쿼리 애니메이션 적용 */
     opacity:1;
@@ -91,7 +90,7 @@ main section {
 main section h2 {
     font-size:2.369rem; font-weight:700; letter-spacing:-0.02rem; margin-bottom:30px;
 }
-main section .swiper {max-width:70%; height:500px; margin:0 auto;}
+main section .swiper {width:70%; /* height:700px; */ margin:0 auto;}
 main section .swiper .swiper-wrapper {}
 main section .swiper .swiper-wrapper .swiper-slide {
     /* margin-right:20px; */ /* background:palevioletred; */
@@ -160,7 +159,7 @@ main section .swiper .swiper-wrapper .swiper-slide .contents .ect .new {
     color:#D62136; border-color:#D62136;
 }
 /* 슬라이드 페이지네이션 */
-main section .swiper .swiper-pagination {bottom:20px;}
+main section .swiper .swiper-pagination {bottom:0;}
 main section .swiper .swiper-pagination-bullet {
     /* pagination은 기본이 파란색 bullet */
     background-color:black;
@@ -195,13 +194,24 @@ main #best_sellers #best_slide .swiper-wrapper .item5 {}
 main #best_sellers #best_slide .swiper-wrapper .item6 {}
 /* 하단 슬라이드 영역 */
 main #bnr_slide {
-    width:100%; height:200px; margin-bottom:0;
+    width:100%; height:200px; margin:0 auto;
+    margin-bottom:0;
 }
-main #bnr_slide .swiper-wrapper {}
+main #bnr_slide .swiper-wrapper {position:relative;}
 main #bnr_slide .swiper-wrapper .swiper-slide {
-    background:url(../image/adv_bnr.jpg) no-repeat center;
+    background:url(../image/btn_bnr.jpg) no-repeat center;
     background-size:cover;
-    max-width:100%; margin:0 auto;
+    margin:0 auto;
+}
+main #bnr_slide .swiper-wrapper .swiper-slide .txt {
+    position: absolute; left:20%; top:30%;
+}
+main #bnr_slide .swiper-wrapper .swiper-slide h2 {
+    font-size: 2.5rem; font-weight: 700;
+    line-height:70px; color:#555555;
+}
+main #bnr_slide .swiper-wrapper .swiper-slide p {
+    font-size: 1.777rem; color:palevioletred; font-weight:500
 }
 main #bnr_slide .swiper-wrapper .slide1 {}
 main #bnr_slide .swiper-wrapper .slide2 {}

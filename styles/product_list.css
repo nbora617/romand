@@ -1,5 +1,6 @@
 main {
-    width:calc(100% - 60px); margin:0 auto; padding:50px 0;
+    width:calc(100% - 60px); min-width:450px;
+    margin:0 auto; padding:50px 0;
 }
 main >* {width:100%;}
 /* 사이트 경로 */

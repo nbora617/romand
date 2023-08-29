@@ -37,7 +37,7 @@ $(document).ready(function(){
     //m_menu의 nav클릭시 서브메뉴보이고 다시 클릭하면 숨기기
     $(".open_m_menu > ul > li > a").click(function(){
         $(this).next().slideToggle(300);
-        $(this).css('backgroundColor','#d3d2d2')
+        // $(this).css('backgroundColor','#d3d2d2')
         // $(this).find('.fa-solid').css('transform','rotate(270deg)')
         // $(this).find('.fa-solid').css('transition','0.5s')
       // $(this).next().slideDown(300);
@@ -46,5 +46,10 @@ $(document).ready(function(){
     });
     $("ul li a").eq(0).trigger("click");
 })
-
+//검색 버튼 누르면 검색창 나오기
+    $(".open_search").hide()
+    $(".gnb .searchGnb").click(function(){
+        // $(".open_search").show()
+        $('.open_search').slideToggle(300)
+    });
 
